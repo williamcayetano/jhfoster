@@ -1,0 +1,1091 @@
+:root {
+    --primary: #d22329;
+    --baby-pink: #efc8c9;
+    --silver: #b3b3b3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+#top-menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 0px 0px 0px;
+}
+
+#top-menu ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+#top-menu li {
+    margin: 20px 10px;
+}
+
+/* logo */
+
+#logo {
+    float: left;
+    margin: 15px 0 0 50px;
+    color: var(--primary);
+}
+
+h1.logo {
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #white;
+    text-indent: -10000px;
+    float: left;
+    height: 50%;
+    width: 36px;
+    margin: 3px;
+}
+
+#logo h2 {
+    font-size: 1.9em;
+    width: 350px;
+    transform: scale(1, 1.3);
+    -webkit-transform: scale(1, 1.3); /* Safari and Chrome */
+    -moz-transform: scale(1, 1.3); /* Firefox */
+    -ms-transform: scale(1, 1.3); /* IE 9+ */
+    -o-transform: scale(1, 1.3); /* Opera */
+}
+
+#logo p {
+    font-size: 0.7em;
+    margin-left: 45px;
+}
+
+#top-menu:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#top-menu li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 900;
+}
+
+#top-menu li:nth-child(6) {
+    background-color: var(--primary);
+    padding: 10px 5px;
+    margin-top: 10px;
+}
+
+#top-menu li:nth-child(6) a {
+    color: white;
+}
+
+/* slider */
+
+#slider {
+    padding: 5.3% 5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("../images/jhf-billboard.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+}
+
+#slider-container {
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+}
+
+#slider-container h2 {
+    margin-top: 85px;
+    font-size: 3em;
+}
+
+#slider-container h3 {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+#slider-container input {
+    margin-top: 20px;
+    background-color: white;
+    line-height: 45px;
+    font-size: 1.5rem;
+    border: none;
+    color: var(--silver);
+}
+
+#slider-container input::placeholder {
+    padding: 0 40px 0 15px;
+    text-align: center;
+    color: var(--silver);
+}
+
+#slider-container input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    margin: 0 0 0 -8px;
+    padding: 0 15px;
+}
+
+#slider-container h4 {
+    margin-top: 25px;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.default-button {
+    margin-top: 25px;
+    padding: 15px 40px;
+    background: var(--primary);
+    border: none;
+    color: white;
+    font-weight: 900;
+    font-size: 1.3em;
+    text-transform: capitalize;
+}
+
+/* about */
+
+#about {
+    background-image: url("../images/jhf-watermark.svg");
+    background-repeat: no-repeat;
+    background-size: auto 150%;
+    background-position: right center;
+    padding: 80px 180px;
+    background-color: #f5f5f5;
+}
+
+/* default styles */
+
+.default-headline {
+    line-height: 1.3;
+    font-weight: bold;
+    margin-bottom: 1.7rem;
+    font-size: 1.75rem;
+    font-family: "Montserrat", sans-serif;
+    color: #444444;
+}
+
+.default-headline:after {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 7%; /* Change this to whatever width you want. */
+    padding-top: 5px; /* This creates some space between the element and the border. */
+    border-bottom: solid var(--primary); /* This creates the border. Replace black with whatever color you want. */
+}
+
+.default-paragraph {
+    font: 18px "Open Sans", sans-serif;
+    color: #222222;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+.default-paragraph a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #999999;
+    margin-top: 1.5rem;
+}
+
+.default-image {
+    background-repeat: no-repeat;
+    background-size: 106% 100%;
+    height: 391px;
+    width: 100%;
+}
+
+.feature-divider {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image-1 {
+    background-image: url("../images/products-block.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.right-text-description {
+    padding: 75px 6% 0px 5%;
+}
+
+.image-2 {
+    background-image: url("../images/services-block.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 200px;
+    box-sizing: border-box;
+    grid-column-start: 2;
+}
+
+.left-text-description {
+    padding: 75px 5% 0px 6%;
+    grid-column-start: 1;
+    grid-row: 1;
+}
+
+.image-3 {
+    background-image: url("../images/training-and-resources.jpg");
+    background-position: center;
+    background-size: 100% 110%;
+    padding-left: 200px;
+    box-sizing: border-box;
+}
+
+#timeline {
+    background: linear-gradient(rgba(210, 35, 42, 0.9), rgba(210, 35, 42, 0.9)),
+        url("../images/jhf-timeline-background.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+}
+
+#timeline h2 {
+    color: white;
+    font-size: 3em;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    position: relative;
+    top: 110px;
+}
+
+#timeline-expansion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.image-4 {
+    background-image: url("../images/john-henry-foster-1928.png");
+    background-repeat: no-repeat;
+    margin: 80px 30px 0px 75px;
+}
+
+.right-timeline-description {
+    padding: 75px 75px 0px 2%;
+    grid-column: 2/4;
+    margin-bottom: 80px;
+}
+
+.left-timeline-description {
+    padding: 0px 2% 0px 75px;
+    grid-column: 1/3;
+    margin-bottom: 80px;
+    margin-right: 30px;
+}
+
+.description-fix {
+    padding-top: 0px;
+}
+
+.story-image-right {
+    background-repeat: no-repeat;
+    grid-column: 3/4;
+    grid-row: 1;
+    min-height: 300px;
+    width: 365px;
+    margin: 0px auto;
+}
+
+.story-image-left {
+    background-repeat: no-repeat;
+    grid-column: 1/2;
+    grid-row: 1;
+    min-height: 300px;
+    width: 365px;
+    margin: 0px 30px 0px 75px;
+}
+
+.image-5 {
+    background-image: url("../images/workbench-and-trailer.jpg");
+}
+
+.image-6 {
+    background-image: url("../images/jhf-1940-1.png");
+}
+
+.image-7 {
+    background-image: url("../images/jhf-1944-1.png");
+}
+
+.image-12 {
+    background-image: url("../images/group-shot.png");
+}
+
+.timeline-final {
+    margin-bottom: 80px;
+}
+
+/* form */
+
+#home-form {
+    background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)),
+        url("../images/jhf-partnership-panel.jpg");
+    background-repeat: no-repeat;
+    background-size: 150%;
+    height: 800px;
+    color: white;
+    position: relative;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#contact-container {
+    grid-column: 1/3;
+}
+
+#contact-details {
+    margin-top: 50px;
+    grid-column: 3/4;
+}
+
+#contact-form {
+    padding: 50px 0 0 50px;
+    box-sizing: border-box;
+}
+
+#contact-form input::placeholder,
+textarea::placeholder {
+    background: #f5f5f5;
+    height: 100%;
+    padding: 15px 0 0 15px;
+    text-align: left;
+    color: var(--silver);
+}
+
+#contact-form h2 {
+    color: black;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#contact-form input,
+textarea {
+    margin-top: 20px;
+    background-color: white;
+    font-size: 1.5rem;
+    border: none;
+    color: var(--silver);
+    height: 2em;
+}
+
+#contact-form textarea {
+    height: 8em;
+    width: 28em;
+    resize: none;
+}
+
+#contact-form input[type="submit"] {
+    background-color: var(--primary);
+    color: white;
+    font-weight: 50;
+    margin-left: 1px;
+    width: 28em;
+    margin-bottom: 20px;
+}
+
+#contact-details h3 {
+    font-size: 1.75rem;
+}
+
+#contact-details p {
+    font-size: 1.125rem;
+}
+
+#form-container {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+}
+
+#form-container h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#form-container input,
+textarea {
+    margin-top: 20px;
+    background-color: white;
+    line-height: 45px;
+    font-size: 1.5rem;
+    border: none;
+    color: var(--silver);
+}
+
+#form-container input::placeholder,
+textarea::placeholder {
+    padding: 0 40px 0 15px;
+    text-align: left;
+    color: var(--silver);
+}
+
+#form-container textarea,
+#contact-form textarea {
+    height: 8em;
+    width: 28em;
+    margin-top: 20px;
+}
+
+#form-container input[type="submit"],
+#contact-form input[type="submit"] {
+    background-color: var(--primary);
+    color: white;
+    font-weight: 50;
+    margin-left: 1px;
+    width: 28em;
+    margin-bottom: 20px;
+}
+
+.partnership-crossout {
+    position: relative;
+}
+
+.partnership-crossout::before {
+    content: "";
+    position: absolute;
+    background: var(--primary);
+    width: 100%;
+    height: 5px;
+    top: 55%;
+    left: 0;
+    transform: skew(10deg) rotate(10deg);
+}
+
+.partnership-crossout::after {
+    position: absolute;
+    content: "Partnerships";
+    font-family: "Permanent Marker", cursive;
+    bottom: 2rem;
+    left: 1rem;
+    transform: rotate(3deg);
+    font-size: 75%;
+}
+
+#home-form-contact h3 {
+    font-size: 2em;
+}
+
+#home-form-contact h4 {
+    font-size: 1.5em;
+}
+
+#home-form-phone {
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+#home-form-other {
+    display: inline-block;
+    float: right;
+    text-align: center;
+}
+
+#divider {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+#divider > * {
+    padding: 80px 15px;
+}
+
+#certification-seal {
+    background-image: url("../images/isochange.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 123px;
+    grid-column: 1/2;
+    margin: 80px 15px;
+}
+
+#certified {
+    grid-column: 2/5;
+}
+
+#clients {
+    background-color: var(--primary);
+    box-sizing: border-box;
+    grid-column: 5/9;
+}
+
+#clients h2 {
+    color: white;
+    line-height: 1.3;
+    font-weight: bold;
+    margin-bottom: 1.7rem;
+    font-size: 1.75rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 5px;
+}
+
+#clients p {
+    color: white;
+    text-align: center;
+}
+
+#partners {
+    background-color: #444444;
+    color: white;
+    padding: 80px 0px 60px 0px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+#partners h2:after {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 7%; /* Change this to whatever width you want. */
+    padding-top: 5px; /* This creates some space between the element and the border. */
+    border-bottom: solid white; /* This creates the border. Replace black with whatever color you want. */
+    margin: 0 auto;
+}
+
+#partner-images {
+    display: flex;
+    justify-content: space-around;
+    filter: brightness(0) invert(1);
+}
+
+#partner-1 {
+    background-image: url("../images/partners/jhf-partner-eatonWeatherhead.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 400px;
+    height: 200px;
+}
+
+#partner-2 {
+    background-image: url("../images/partners/jhf-partner-festo.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 400px;
+    height: 200px;
+}
+
+#partner-3 {
+    background-image: url("../images/partners/jhf-partner-rexroth-bosch-group.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 400px;
+    height: 200px;
+}
+
+#partner-4 {
+    background-image: url("../images/partners/jhf-partner-sun-hydraulics.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 400px;
+    height: 200px;
+}
+
+#footer-menu {
+    background-image: url("../images/footer-pattern.svg");
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 15px;
+    color: white;
+}
+
+#footer-menu ul {
+    list-style-type: none;
+}
+
+#footer-menu h2 {
+    padding-bottom: 40px;
+}
+
+#footer-menu li a,
+li {
+    color: white;
+    text-decoration: none;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    font-weight: 700;
+}
+
+#base {
+    background-color: #a80508;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+#base a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#cards {
+    padding: 75px 10px 0 10px;
+}
+
+#cards li,
+#contact-section li {
+    width: 295px;
+    overflow: hidden;
+    color: black;
+    margin: 25px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#cards img,
+#contact-section img {
+    width: 100%;
+    max-height: 170px;
+    box-shadow: 0 4px 4px 0 rgba(0.2, 0.2, 0.2, 0.2),
+        0 2px 12px 0 rgba(0, 0, 0, 0.19);
+}
+
+#cards ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#cards h3,
+#contact-section h3 {
+    text-align: center;
+}
+
+#contact-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#contact-link {
+    text-align: center;
+    padding: 60px 70px 0px 70px;
+}
+
+#contact-link h2,
+p {
+    padding-bottom: 10px;
+}
+
+#contact-link h2 {
+    padding: 0 20px 10px 20px;
+}
+
+/* Products Header */
+
+#products-header {
+    background-image: url("../images/products-banner.jpg");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 368px;
+}
+
+#services-header {
+    background-image: url("../images/services-banner.jpg");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 368px;
+}
+
+#contact-header {
+    background-image: url("../images/contact-banner.jpg");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 368px;
+}
+
+#training-header {
+    background-image: url("../images/training-and-resources-banner.jpg");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 368px;
+}
+
+#story-header {
+    background-image: url("../images/jhf-story-4-1.jpg");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 368px;
+}
+
+.training-offset,
+.training-white {
+    padding: 80px 180px;
+    background-color: #f5f5f5;
+}
+
+.training-white {
+    background-color: white;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 960px) {
+    header {
+        position: relative;
+    }
+    #top-menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    #logo {
+        height: 65px;
+    }
+
+    #burger-nav {
+        background: url(../images/burger-crimson.png) no-repeat 98% center;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        margin: 10px 10px 0 0;
+    }
+
+    header ul {
+        height: 0;
+        overflow: hidden;
+    }
+
+    #top-menu ul {
+        display: block;
+    }
+
+    #top-menu {
+        display: block;
+        width: 100%;
+    }
+
+    header ul.open {
+        height: auto;
+        width: 100%;
+    }
+
+    #about,
+    .training-offset,
+    .training-white {
+        padding: 25px 18px;
+        font-size: 0.4em;
+    }
+
+    .feature-divider {
+        display: block;
+    }
+
+    .image-1,
+    .image-2 {
+        width: 100%;
+    }
+
+    .image-3 {
+        background-size: 100% 150%;
+    }
+
+    .image-4,
+    .image-6,
+    .image-12 {
+        min-height: 300px;
+        width: 365px;
+        margin: 30px auto 0 auto;
+    }
+
+    .right-text-description,
+    .left-text-description {
+        padding: 0 12px;
+        margin: 25px auto;
+        width: 600px;
+    }
+
+    .default-button {
+        width: 100%;
+    }
+
+    #timeline-expansion {
+        display: block;
+    }
+
+    .right-timeline-description {
+        padding-top: 0;
+        margin: 0 0 25px 50px;
+    }
+
+    #home-form,
+    #contact-form {
+        height: 690px;
+        width: 100%;
+        background-size: 180%;
+    }
+
+    #home-form-phone,
+    #home-form-other {
+        display: none;
+    }
+
+    #divider {
+        display: block;
+    }
+
+    #certification-seal {
+        background-size: 80%;
+        width: 200px;
+        height: 70px;
+        margin: 30px auto -50px auto;
+    }
+
+    #certified,
+    #clients p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* slider */
+
+    #slider {
+        padding: 15.3% 5% 5.3% 5%;
+        min-height: 500px;
+    }
+
+    #slider-container {
+        padding-top: 0;
+    }
+
+    #slider-container h2 {
+        font-size: 1.8em;
+    }
+
+    #slider-container h3 {
+        font-size: 1.3em;
+    }
+
+    #slider-container h4 {
+        font-size: 1.1em;
+    }
+    #slider-container .default-button {
+        width: 83%;
+    }
+
+    /* cards */
+    #cards {
+        padding: 75px 0 0 0;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #cards ul,
+    #contact-section {
+        display: block;
+    }
+
+    #cards li,
+    #contact-section li {
+        width: 100%;
+        box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2),
+            0 0px 20px 0 rgba(0, 0, 0, 0.19);
+        max-height: 100px;
+    }
+
+    #cards li img,
+    #contact-section li img {
+        width: 150px;
+        max-height: 100px;
+    }
+
+    #cards li h3,
+    #contact-section li h3 {
+        margin-left: 150px;
+    }
+
+    #contact-section li img {
+        height: 100px;
+    }
+
+    #cards h3,
+    #contact-section h3 {
+        margin-top: -50px;
+        margin-left: 50px;
+    }
+
+    #contact-section li {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #contact-form {
+        padding: 0;
+        width: 80%;
+        margin: 50px auto -80px auto;
+    }
+
+    #contact-link {
+        padding-top: 40px;
+    }
+
+    #products-header,
+    #services-header,
+    #training-header,
+    #story-header {
+        max-height: 190px;
+    }
+
+    #container {
+        display: block;
+        margin-bottom: 100px;
+    }
+
+    #contact-container p,
+    h3 {
+        text-align: center;
+    }
+
+    #contact-container h3,
+    p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #slider-container input[type="text"] {
+        width: 95%;
+    }
+
+    .right-text-description,
+    .left-text-description {
+        width: 95%;
+    }
+
+    #home-form,
+    #contact-form {
+        height: 600px;
+        background-size: 240%;
+    }
+
+    #form-container {
+        position: static;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    #form-container form {
+        padding-left: 30px;
+    }
+
+    #form-container h2 {
+        font-size: 1.5em;
+        margin: 0px auto 20px auto;
+        padding-top: 40px;
+    }
+
+    #form-container input[type="text"],
+    #contact-form input[type="text"] {
+        width: 95%;
+    }
+
+    #form-container textarea,
+    #contact-form textarea {
+        height: 6em;
+        width: 95%;
+    }
+
+    #form-container input[type="submit"],
+    #contact-form input[type="submit"] {
+        width: 95%;
+    }
+
+    #timeline {
+        min-height: 200px;
+    }
+    #timeline h2 {
+        font-size: 2.6em;
+        top: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #form-container form {
+        padding-left: 15px;
+    }
+    #logo {
+        margin-left: 10px;
+    }
+    #logo h2 {
+        font-size: 1.5em;
+        width: 300px;
+    }
+    #home-form {
+        background-size: 400%;
+    }
+    #footer-menu {
+        display: block;
+        text-align: center;
+    }
+    .feature-divider {
+        overflow: hidden;
+    }
+    .image-1,
+    .image-2 {
+        width: 110%;
+        overflow: hidden;
+        background-position: right;
+    }
+    .image-3 {
+        background-size: 120% 170%;
+    }
+    .image-4 {
+        min-height: 300px;
+        margin: 0 auto 0 auto;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+    }
+    #timeline {
+        min-height: 160px;
+    }
+    #timeline h2 {
+        font-size: 2.3em;
+        top: 15px;
+    }
+
+    #partners {
+        padding: 40px 0px 0px 0px;
+    }
+
+    .right-timeline-description {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+}
